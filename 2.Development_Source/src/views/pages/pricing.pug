@@ -1,0 +1,21 @@
+extends ../layouts/master.pug
+
+block title
+  title Pricing - Multipurpose Startup & SaaS Template
+
+block header
+  include ../components/header-3.pug
+
+block content
+  include ../sections/pricing/choose-plan.pug
+  include ../sections/pricing/compare.pug
+  include ../sections/pricing/support.pug
+  .no-bg-faqs
+    include ../sections/homepage1/faqs.pug
+  include ../sections/pricing/testimonials.pug
+  include ../sections/newsletter-2.pug
+
+block footer
+  include ../components/footer.pug
+
+block scripts-custom

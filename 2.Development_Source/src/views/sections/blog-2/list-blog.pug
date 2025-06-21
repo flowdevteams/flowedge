@@ -1,0 +1,95 @@
+section.section.mt-80
+    .container
+        .row
+            .col-lg-12.text-center
+                span.btn.btn-tag.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s') The Flowedge Blog
+                h2.color-brand-1.mt-15.wow.animate__animated.animate__fadeIn(data-wow-delay='.2s') Insight and advice from
+                    br.d-none.d-lg-block
+                    | our expert team
+
+        .mt-30.mb-60
+            ul.list-buttons
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    a.active(href="#", data-type="all") All articles
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.1s')
+                    a(href="#", data-type="featured") Featured
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.2s')
+                    a(href="#", data-type="company") Company
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.3s')
+                    a(href="#", data-type="product-news") Product News
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.4s')
+                    a(href="#", data-type="customer-stories") Customer Stories
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.5s')
+                    a(href="#", data-type="guides") Guides
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.6s')
+                    a(href="#", data-type="other") Other
+
+        .box-list-blogs
+            .row.mt-55
+                .col-lg-12.mb-60.item-article.featured
+                    .item-1
+                        .box-cover-border
+                            .row.align-items-center
+                                .col-lg-6
+                                    img.d-block(src="assets/imgs/page/blog2/img1.png", alt="Flowedge")
+                                .col-lg-6
+                                    .box-info-video
+                                        span.btn.btn-tag Featured
+                                        a(href="#")
+                                            h3.color-brand-1.mt-15.mb-20 7 Things To Keep In Mind When Starting A Business
+                                        .mb-25.mt-10
+                                            span.font-xs-color-grey-500 November 17, 2025
+                                            span.font-xs-color-grey-500.icon-read 2 min read
+
+                                        p.font-md.color-grey-500 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.
+                                        .box-button.text-start.mt-45
+                                            a.btn.btn-default.font-sm-bold.pl-0.hover-up(href='#')
+                                                | Read more
+                                                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+            .mt-20.mb-30
+                h3.color-brand-1.title-line-right Promotions
+            .row
+                .col-lg-4.col-md-6.mb-30.item-article.customer-stories
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img3.png','10 Content Proofreading Tips to Catch More Avoidable Goofs')
+                .col-lg-4.col-md-6.mb-30.item-article.product-news
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img4.png','Everything a Beginner Blogger Needs to Know for 2025', 'Tutorial')
+                .col-lg-4.col-md-6.mb-30.item-article.company
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img5.png','Bad Email Marketing and Nickelback Don’t Have Much in Common','Team work')
+
+            .mt-20.mb-50
+                h3.color-brand-1.title-line-right.line-brand-3 E-Commerce
+            .row
+                .col-lg-6.col-md-6.mb-30.item-article.featured
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img1.png')
+                .col-lg-6.col-md-6.mb-30.item-article.guides
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img2.png','Essential Steps to Building And Refining an Effective UX Portfolio', 'Technology')
+            .mt-0.mb-30.text-center
+                a.btn.btn-white-circle.font-sm-bold.border-brand.text-none(href="#") View more in this category
+
+            .mt-20.mb-50
+                h3.color-brand-1.title-line-right.line-brand-4 Marketing Strategy
+            .row
+                .col-lg-4.col-md-6.mb-30.item-article.featured
+                    +cardBlogGridStyle3('assets/imgs/page/blog2/img2.png','7 Copywriting Strategies the Great Copywriters Wish You Knew','Marketing')
+                .col-lg-4.col-md-6.mb-30.item-article.featured
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img6.png','What Is the Main Action a Writer Takes When Proofreading?', 'Blogging')
+                .col-lg-4.col-md-6.mb-30.item-article.other
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img9.png','The Betty Crocker Secret to an Email Marketing Strategy People Enjoy')
+
+            .mt-0.mb-30.text-center
+                a.btn.btn-white-circle.font-sm-bold.border-brand.text-none(href="#") View more in this category
+
+            .mt-20.mb-50
+                h3.color-brand-1.title-line-right.line-info Industry Use Cases
+            .row
+                .col-lg-6.col-md-12.mb-30.item-article.featured
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img10.png','22 Strategies for Outdoor & Sporting Goods E-Commerce Retailers in 2025 + Industry Benchmarks','Marketing')
+                .col-lg-6.col-md-12.mb-30.item-article.featured
+                    +cardBlogGridStyle3('','Understanding The Different Types of Automated Email Marketing Campaigns','','','If you are already on Shopify, you are probably familiar with the importance of crafting the perfect email newsletter. Even if a customer visits your site but doesn’t make a purchase, your newsletter can be the right motivation that will bring them back when a special promotion is on the line.  Since the newsletter is an integral part of email marketing, let us walk you through the steps of creating a winning newsletter capable of turning subscribers into buyers.')
+                    .border-bottom.bd-grey-80.mt-0.pt-30.mb-50
+                    +cardBlogGridStyle3('','How To Create a Successful Newsletter For Your Shopify Store ','','','Popups can also be employed to help eCommerce businesses build their newsletter email list organically. By using the right CTA in your email newsletter popup for Shopify-based eCommerce stores, you can change the pace of your email address accumulation process and help yourself reach a wider audience – all by using a simple incentive such as a special offer discount code on a specific item or a freebie in exchange for the client’s email address.')
+
+            .mt-0.mb-30.text-center
+                a.btn.btn-white-circle.font-sm-bold.border-brand.text-none(href="#") View more in this category

@@ -1,0 +1,27 @@
+section.section.mt-50
+    .container
+        .row.align-items-end
+            .col-lg-8.col-md-8
+                h2.color-brand-1.mb-20.wow.animate__animated.animate__fadeInUp(data-wow-delay='.0s') From our blog
+                p.font-lg.color-gray-500.wow.animate__animated.animate__fadeInUp(data-wow-delay='.0s') Aenean velit nisl, aliquam eget diam eu, rhoncus tristique dolor.
+                    br.d-none.d-lg-block
+                    | Aenean vulputate sodales urna ut vestibulum
+            .col-lg-4.col-md-4.text-md-end.text-start
+                a.btn.btn-default.font-sm-bold.pl-0.wow.animate__animated.animate__fadeInUp(data-wow-delay='.0s') View All
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+        .row.mt-70
+            .col-lg-4.col-md-6.wow.animate__animated.animate__fadeInUp(data-wow-delay='.0s')
+                +cardBlogGrid('assets/imgs/page/homepage1/news1.png','The smart way to grow your money while you sleep', 'blog-detail.html')
+            .col-lg-4.col-md-6.wow.animate__animated.animate__fadeInUp(data-wow-delay='.1s')
+                +cardBlogGrid('assets/imgs/page/homepage1/news2.png','Helpful Tips for Working from Home as a Freelancer', 'blog-detail.html')
+            .col-lg-4
+                ul.list-blogs
+                    li.wow.animate__animated.animate__fadeInUp(data-wow-delay='.2s')
+                        +cardBlogList('assets/imgs/page/homepage1/news-sm1.png', 'How to make a great impression from the first moment', 'blog-detail.html')
+                    li.wow.animate__animated.animate__fadeInUp(data-wow-delay='.3s')
+                        +cardBlogList('assets/imgs/page/homepage1/news-sm2.png', 'We can blend colors multiple ways, the most common', 'blog-detail.html')
+                    li.wow.animate__animated.animate__fadeInUp(data-wow-delay='.4s')
+                        +cardBlogList('assets/imgs/page/homepage1/news-sm3.png', 'How To Blow Through Capital At An Incredible Rate', 'blog-detail.html')
+                    li.wow.animate__animated.animate__fadeInUp(data-wow-delay='.5s')
+                        +cardBlogList('assets/imgs/page/homepage1/news-sm4.png', 'Design Studios That Everyone Should Know About?', 'blog-detail.html')

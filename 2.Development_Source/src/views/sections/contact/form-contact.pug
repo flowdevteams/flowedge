@@ -1,0 +1,40 @@
+section.section.mt-70
+    .container
+        .row
+            .col-lg-5
+                h2.color-brand-1.mb-15 Get in touch
+                p.font-sm.color-grey-500 Do you want to know more or contact our sales department?
+                .mt-50
+                    .wow.animate__animated.animate__fadeInUp(data-wow-delay='.0s')
+                        +cardContact()
+                    .wow.animate__animated.animate__fadeInUp(data-wow-delay='.2s')
+                        +cardContact('assets/imgs/page/contact/img2.png','Watch Product Videos','Watch our video tutorials for visual walkthroughs on how to use our features.')
+                    .wow.animate__animated.animate__fadeInUp(data-wow-delay='.4s')
+                        +cardContact('assets/imgs/page/contact/img3.png','Get in touch with Sales','Let us talk about how we can help your enterprise.')
+
+            .col-lg-7
+                .box-form-contact.wow.animate__animated.animate__fadeIn(data-wow-delay='.6s')
+                    .row
+                        .col-lg-6.col-sm-6
+                            .form-group.mb-25
+                                input.form-control.icon-user(type="text", placeholder="Your name")
+                        .col-lg-6.col-sm-6
+                            .form-group.mb-25
+                                input.form-control.icon-email(type="text", placeholder="Email")
+                        .col-lg-6.col-sm-6
+                            .form-group.mb-25
+                                input.form-control.icon-phone(type="text", placeholder="Phone")
+                        .col-lg-6.col-sm-6
+                            .form-group.mb-25
+                                input.form-control.icon-company(type="text", placeholder="Company")
+                        .col-lg-12
+                            .form-group.mb-25
+                                input.form-control(type="text", placeholder="Subject")
+                        .col-lg-12
+                            .form-group.mb-25
+                                textarea.form-control.textarea-control(placeholder="Write something")
+                        .col-xl-4.col-lg-5.col-md-5.col-sm-6.col-9
+                            .form-group
+                                button.btn.btn-brand-1-full.font-sm(type="submit") Send message
+                                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')

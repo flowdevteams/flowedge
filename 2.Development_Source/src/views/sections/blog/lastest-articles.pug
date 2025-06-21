@@ -1,0 +1,80 @@
+section.section.mt-80
+    .container
+        .row
+            .col-lg-12.text-center
+                h2.color-brand-1.mb-20.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s') Lastest Articles
+
+        .mt-30.mb-60
+            ul.list-buttons
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    a.button-click.active(href="#", data-type="all") All articles
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.2s')
+                    a.button-click(href="#", data-type="featured") Featured
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.3s')
+                    a.button-click(href="#", data-type="company") Company
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.4s')
+                    a.button-click(href="#", data-type="product-news") Product News
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.5s')
+                    a.button-click(href="#", data-type="customer-stories") Customer Stories
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.6s')
+                    a.button-click(href="#", data-type="guides") Guides
+                li.wow.animate__animated.animate__fadeIn(data-wow-delay='.7s')
+                    a.button-click(href="#", data-type="other") Other
+
+        .box-list-blogs
+            .row.mt-55
+                .col-lg-12.mb-60.item-article.featured.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    .item-1
+                        .box-cover-border
+                            .row.align-items-center
+                                .col-lg-6
+                                    img.d-block(src="assets/imgs/page/homepage2/img-marketing.png", alt="Flowedge")
+                                .col-lg-6
+                                    .box-info-video
+                                        span.btn.btn-tag Featured
+                                        a(href="#")
+                                            h3.color-brand-1.mt-15.mb-20 7 Things To Keep In Mind When Starting A Business
+                                        .mb-25.mt-10
+                                            span.font-xs-color-grey-500 November 17, 2025
+                                            span.font-xs-color-grey-500.icon-read 2 min read
+
+                                        p.font-md.color-grey-500 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.
+                                        .box-button.text-start.mt-45
+                                            a.btn.btn-default.font-sm-bold.pl-0.hover-up(href='#')
+                                                | Read more
+                                                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+                .col-lg-6.col-md-6.mb-30.item-article.featured.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img1.png')
+                .col-lg-6.col-md-6.mb-30.item-article.guides.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img2.png','Essential Steps to Building And Refining an Effective UX Portfolio', 'Technology')
+
+                .col-lg-4.col-md-6.mb-30.item-article.customer-stories.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img3.png','10 Content Proofreading Tips to Catch More Avoidable Goofs')
+                .col-lg-4.col-md-6.mb-30.item-article.product-news.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img4.png','Everything a Beginner Blogger Needs to Know for 2025', 'Tutorial')
+                .col-lg-4.col-md-6.mb-30.item-article.company.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img5.png','Bad Email Marketing and Nickelback Don’t Have Much in Common','Team work')
+                .col-lg-12.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    .box-ads-1.mb-70
+                        h3.color-brand-1.font-shippori.title-ads.mb-5 Get our free marketing books
+                        p.font-xs.color-grey-500.mb-10 We synthesize all the tips and trends about online marketing in valuable books
+                        a.btn.btn-default.font-sm-bold.color-grey-900.pl-0(href="#") Register now
+                            svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+                .col-lg-4.col-md-6.mb-30.item-article.featured.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img6.png','7 Copywriting Strategies the Great Copywriters Wish You Knew','Writing')
+                .col-lg-4.col-md-6.mb-30.item-article.featured.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img7.png','What Is the Main Action a Writer Takes When Proofreading?', 'Blogging')
+                .col-lg-4.col-md-6.mb-30.item-article.other.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img8.png','The Betty Crocker Secret to an Email Marketing Strategy People Enjoy')
+                .col-lg-4.col-md-6.mb-30.item-article.other.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img9.png','Email Autoresponders: Meet the Lazy Marketer’s Best Friend','Business')
+                .col-lg-4.col-md-6.mb-30.item-article.other.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img10.png','Stop Wondering About How to Respond to Criticism')
+                .col-lg-4.col-md-6.mb-30.item-article.other.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                    +cardBlogGridStyle3('assets/imgs/page/blog/img11.png','Top 5 Content Marketing Mistakes You’ll Wish You Fixed Sooner','Blogging')
+
+            .mt-20.mb-30.text-center.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s')
+                a.btn.btn-brand-1.font-sm-bold(href="#") Load More...

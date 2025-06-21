@@ -1,0 +1,861 @@
+mixin cardBlogGrid(img='assets/imgs/page/homepage1/news1.png', title='The smart way to grow your money while you sleep', link='blog-detail.html', description='Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus. Fusce varius vel velit commodo consectetur. Aliquam sodales posuere neque, eget placerat libero fermentum nec. Fusce malesuada laoreet enim, ut convallis odio eleifend vitae.', author='Guy Hawkins', department='Bank of America')
+    .card-blog-grid.hover-up
+        .card-image
+            a(href= link)
+                img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h4.color-brand-1= title
+            .mt-20
+                span.date-post.font-xs.color-grey-300
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z')
+                    | 29 May 2025
+                span.time-read.font-xs.color-grey-300
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z')
+                    | 3 mins read
+            p.font-sm.color-grey-500.mt-20= description
+            .mt-20.d-flex
+                .box-author
+                    a(href="#")
+                        img(src="assets/imgs/page/homepage1/author.png", alt="Flowedge")
+                    .author-info
+                        a(href="#")
+                            span.font-md-bold.color-brand-1.author-name= author
+                        span.font-xs.color-grey-500.department= department
+                .box-button-more.text-end
+                    a.btn.btn-default.font-sm-bold(href='blog-detail.html')
+                        | Learn More
+                        svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                            path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardBlogGridStyle2(img='assets/imgs/page/homepage1/news1.png', title='Easy Ways to Make Money While You Sleep', category='Technology', link='blog-detail.html', description='Fusce dictum ullamcorper dui, id dignissim arcu volutpat vitae. Aenean mattis vestibulum odio eu facilisis. Aenean quam arcu, blandit at aliquet sit amet, convallis nec risus.')
+    .card-blog-grid.card-blog-grid-2.hover-up
+        .card-image.img-reveal
+            a(href= link)
+                img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h6.color-brand-1= title
+            p.font-sm.color-grey-500.mt-20= description
+            .mt-20.d-flex.align-items-center.border-top.pt-20
+                a.btn.btn-border-brand-1.mr-15(href="blog.html")= category
+                span.date-post.font-xs.color-grey-300.mr-15
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z')
+                    | 29 May 2025
+                span.time-read.font-xs.color-grey-300
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z')
+                    | 3 mins read
+
+mixin cardBlogGridStyle3(img='assets/imgs/page/blog/img1.png', title='How to save money - 8 simple ways to start saving money every month', category='Marketting', link='blog-detail.html', description='Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.')
+    .card-blog-grid.card-blog-grid-3.hover-up
+        if img
+            .card-image
+                a(href= link)
+                    img(src= img, alt="Flowedge")
+                if category
+                    label.lbl-border= category
+        .card-info
+            a(href= link)
+                h4.color-brand-1= title
+            .mb-25.mt-10
+                span.font-xs.color-grey-500 November 17, 2025
+                span.font-xs.color-grey-500.icon-read 2 min read
+            p.font-sm.color-grey-500.mt-20= description
+
+
+mixin cardBlogList(img='assets/imgs/page/homepage1/news-sm1.png', title='How to make a great impression from the first moment', link='blog-detail.html', datepost='29 May 2025', read='3 mins read')
+    .card-blog-list.hover-up
+        .card-info
+            a(href= link)
+                h5.color-brand-1= title
+            .mt-10
+                span.date-post.font-xs.color-grey-300
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z')
+                    span= datepost
+                span.time-read.font-xs.color-grey-300
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z')
+                    span= read
+        .card-image
+            a(href= link)
+                img(src= img, alt="Flowedge")
+
+mixin cardTestimonial(author_img='assets/imgs/page/homepage1/author.png', author_name='Guy Hawkins', department='Bank of America', comment='Access the same project through five different dynamic views: a kanban board, Gantt chart, spreadsheet, calendar or simple task list. When team members can choose the work style that suits them best, productivity and engagement skyrocket. Maecenas lobortis risus.', date='29 November 2025')
+    .card-testimonial-grid
+        .box-author.mb-10
+            a(href="#")
+                img(src= author_img, alt="Flowedge")
+            .author-info
+                a(href="#")
+                    span.font-md-bold.color-brand-1.author-name= author_name
+                span.font-xs.color-grey-500.department= department
+        p.font-md.color-grey-500= comment
+        .card-bottom-info
+            span.font-xs.color-grey-500.date-post= date
+            .rating.text-end
+                img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                |
+                img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                |
+                img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                |
+                img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                |
+                img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+
+mixin cardTestimonialList(author_img='assets/imgs/page/homepage1/author.png', author_name='Guy Hawkins', department='Bank of America', comment='Access the same project through five different dynamic views: a kanban board, Gantt chart, spreadsheet, calendar or simple task list. When team members can choose the work style that suits them best, productivity and engagement skyrocket. Maecenas lobortis risus.')
+    .card-testimonial-list
+        .d-flex.align-items-center
+            .box-author.mb-10
+                a(href="#")
+                    img(src= author_img, alt="Flowedge")
+                .author-info
+                    a(href="#")
+                        span.font-md-bold.color-brand-1.author-name= author_name
+                    span.font-xs.color-grey-500.department= department
+            if block
+                block
+            if !block
+                .rating.text-end
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+        p.font-md.color-grey-500= comment
+
+mixin cardOffer(img='assets/imgs/page/homepage1/cross.png', title='Cross-Platform', description='Discover powerful features to boost your productivit. You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.' )
+    .card-offer.hover-up
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            h4.color-brand-1.mb-15= title
+            p.font-md.color-grey-500.mb-15= description
+            .box-button-offer
+                a.btn.btn-default.font-sm-bold.pl-0.color-brand-1 Learn More
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardOfferStyle3(img='assets/imgs/page/homepage1/cross.png', title='Cross-Platform', description='Your site is not complete with only landings. Get essential inner pages using our ready demos.')
+    .card-offer-style-3
+        .card-head
+            .card-image
+                img(src= img, alt="Flowedge")
+            .carrd-title
+                h4.color-brand-1= title
+        .card-info
+            if description
+                p.font-sm.color-grey-500.mb-15= description
+            if block
+                block
+            .box-button-offer
+                a.btn.btn-default.font-sm-bold.pl-0.color-brand-1.hover-up Learn More
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardWedo(img='assets/imgs/page/homepage1/cross.png', title='Smart Installation Tools', link='job-detail.html', description='Your site is not complete with only landings. Get essential inner pages using our ready demos.')
+    .card-offer.card-we-do.hover-up
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            h4.color-brand-1.mb-10
+                 a.color-brand-1(href= link)= title
+            p.font-md.color-grey-500.mb-5= description
+            .box-button-offer
+                a.btn.btn-default.font-sm-bold.pl-0.color-brand-1 Learn More
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardSteps(number='1', title='Create an account', description='What makes us different from others? We give holistic solutions with strategy, design & technology.')
+    .item-number.hover-up
+        .num-ele= number
+        .info-num
+            h5.color-brand-1.mb-15= title
+            p.font-md.color-grey-500= description
+
+mixin cardCategory(img='assets/imgs/page/homepage3/certification.png', title='Certification', link='#')
+    .card-small
+        .card-image
+            a(href= link)
+                .box-image
+                    img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h6.color-brand-1.icon-up= title
+
+mixin cardCategory_2(img='assets/imgs/page/homepage1/free.png', title='Connected', desc='We come together wherever we are – across time zones, regions, offices and screens. You will receive support from your teammates anytime and anywhere.', link='#')
+    .card-small.card-small-2
+        .card-image
+            a(href= link)
+                .box-image
+                    img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h6.color-brand-1.mb-10= title
+            p.font-xs.color-grey-500= desc
+
+mixin cardContactInfo(img='assets/imgs/page/homepage1/free.png', title='Connected', desc='We come together wherever we are – across time zones, regions, offices and screens. You will receive support from your teammates anytime and anywhere.')
+    .card-small.card-small-2
+        .card-image
+            .box-image
+                img(src= img, alt="Flowedge")
+        .card-info
+            h6.color-brand-1.mb-10= title
+            if block
+                block
+            if !block
+                p.font-xs.color-grey-500= desc
+
+mixin choosePlanFree(title='Trial Plan', desc='Protect for testing', bill='No Credit card required', price='FREE', type='- 30 days trial')
+    .card-plan.hover-up
+        .card-image-plan
+            .icon-plan
+                img(src="assets/imgs/page/homepage1/free.svg", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1= title
+                p.font-md.color-grey-400= desc
+        .box-day-trial
+            span.font-lg-bold.color-brand-1= price
+            |
+            span.font-md.color-grey-500= type
+            br
+            span.font-xs.color-grey-500= bill
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Facebook Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Global Certificates
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Snapchat Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | TikTok Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-brand-1-full.hover-up(href="#") Try for free
+                svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlanStandard(title='Standard', desc='Advanced project', bill='Billed annually', price='$29', type='- user / month')
+    .card-plan.hover-up
+        .card-image-plan
+            .icon-plan.bg-1
+                img(src="assets/imgs/page/homepage1/standard.svg", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1= title
+                p.font-md.color-grey-400= desc
+        .box-day-trial
+            span.font-lg-bold.color-brand-1 $29
+            |
+            span.font-md.color-grey-500 - user / month<br>
+            span.font-xs.color-grey-500 Billed annually
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Global Certificates
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Snapchat Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | TikTok Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-brand-1-full.hover-up(href="#") Get Started
+                svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlanBusiness(title='Business', desc='Protect for testing', bill='One-time pay', price='$99', type='- user / month')
+    .card-plan.card-plan-2.hover-up
+        .card-image-plan
+            .icon-plan.bg-2
+                img(src="assets/imgs/page/homepage1/business.svg", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1= title
+                p.font-md.color-grey-400= desc
+        .box-day-trial
+            span.font-lg-bold.color-brand-1= price
+            |
+            span.font-md.color-grey-500= type
+            br
+            span.font-xs.color-grey-500= bill
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Global Certificates
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Snapchat Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | TikTok Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-brand-1-full.hover-up(href="#") Get Started
+                svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlanEnterprise(title='Enterprise', desc='Protect for testing', bill='Billed annually', price='$299', type='- user / month')
+    .card-plan.hover-up
+        .card-image-plan
+            .icon-plan.bg-3
+                img(src="assets/imgs/page/homepage2/creation.png", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1= title
+                p.font-md.color-grey-400= desc
+        .box-day-trial
+            span.font-lg-bold.color-brand-1= price
+            |
+            span.font-md.color-grey-500= type
+            br
+            span.font-xs.color-grey-500 One-time pay
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Global Certificates
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Snapchat Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | TikTok Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-brand-1-full.hover-up(href="#") Get Started
+                svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlan2Free()
+    .card-plan.card-plan-2.hover-up
+        .card-image-plan
+            .icon-plan
+                img(src="assets/imgs/page/homepage1/free.svg", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1 Trial Plan
+                p.font-md.color-grey-400 Protect for testing
+        .box-day-trial.box-trial-two
+            .trial-col-1
+                span.font-lg-bold.color-brand-1 FREE
+                |
+                span.font-md.color-grey-500 - 30 days trial<br>
+                span.font-xs.color-grey-500 No Credit card required
+            .trial-col-2
+                a.btn.btn-brand-1-full.hover-up(href="#") Try for free
+                    svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Global Certificates
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Snapchat Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | TikTok Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-default.font-sm-bold(href='#')
+                | Learn More
+                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlan2Standard(price='$29', type='- user / month')
+    .card-plan.card-plan-2.hover-up
+        label.popular Popular
+        .card-image-plan
+            .icon-plan.bg-1
+                img(src="assets/imgs/page/homepage1/standard.svg", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1 Standard
+                p.font-md.color-grey-400 Advanced project
+        .box-day-trial.box-trial-two
+            .trial-col-1
+                span.font-lg-bold.color-brand-1.text-price-standard= price
+                |
+                span.font-md.color-grey-500.text-type-standard= type
+                br
+                span.font-xs.color-grey-500 Billed annually
+            .trial-col-2
+                a.btn.btn-brand-1-full.hover-up(href="#") Get Started
+                    svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Global Certificates
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Snapchat Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | TikTok Advertising
+                li.mutted
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M6 18L18 6M6 6l12 12')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-default.font-sm-bold(href='#')
+                | Learn More
+                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin choosePlan2Enterprise(price='$299', type='- user / month')
+    .card-plan.card-plan-2.hover-up
+        .card-image-plan
+            .icon-plan.bg-2
+                img(src="assets/imgs/page/homepage2/creation.png", alt="Flowedge")
+            .info-plan
+                h4.color-brand-1 Enterprise
+                p.font-md.color-grey-400 Protect for testing
+        .box-day-trial.box-trial-two
+            .trial-col-1
+                span.font-lg-bold.color-brand-1.text-price-enterprise= price
+                |
+                span.font-md.color-grey-500.text-type-enterprise= type
+                br
+                span.font-xs.color-grey-500 Billed annually
+            .trial-col-2
+                a.btn.btn-brand-1-full.hover-up(href="#") Get Started
+                    svg.w-6.h-6.icon-16.ml-10(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+        .mt-30.mb-30
+            ul.list-ticks.list-ticks-2
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Brand Awareness Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Retargeting Ads
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Contextual, Demographic
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Facebook Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Global Certificates
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Snapchat Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | TikTok Advertising
+                li
+                    svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                    | Advanced List Building
+        .mt-20
+            a.btn.btn-default.font-sm-bold(href='#')
+                | Learn More
+                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin itemCore(img='assets/imgs/page/about/img1.png', description='“Whether you’re working from home, at the office or at the job site, we provide flexible tools so you can connect and collaborate on waterfall projects, agile projects and everything in between.”', author='Ralph Edwards', position='Chairman of the board')
+    .item-core.mb-30
+        .item-image
+            img(src= img, alt="Flowedge")
+        .item-desc
+            p.font-md.color-grey-400.mb-15= description
+            h6.color-brand-1= author
+            span.color-grey-500.font-xs= position
+
+mixin cardTeam(img='assets/imgs/page/about/team1.png', name='Devon Lane', position='CEO', description='Sharing content online allows you to craft an online persona that reflects your personal values and professional skills. Even if you only use social media occasionally')
+    .card-team.mb-30
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            a.font-lg(href="#")= name
+            p.font-xs.color-grey-200.mb-10= position
+            p.font-xs.color-grey-400= description
+            .list-socials
+                a.icon-socials.icon-facebook(href='#')
+                a.icon-socials.icon-instagram(href='#')
+                a.icon-socials.icon-twitter(href='#')
+
+mixin cardSupport(img='', title='Daily Updates', desc='Share updates instantly within our project management software, and get the entire team collaborating')
+    .card-support
+        .card-image
+            if img
+                .box-circle-img
+                    img(src= img, alt="Flowedge")
+            if block
+                block
+        .card-info
+            h4.color-brand-1.mb-15= title
+            p.font-md.color-grey-500.mb-15= desc
+            a.btn.btn-default.pl-0.font-sm-bold.hover-up(href='#')
+                | Learn More
+                svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardContact(img='assets/imgs/page/contact/img1.png', title='Visit the Knowledge Base', description='Browse customer support articles and step-by-step instructions for specific features.')
+    .card-offer.card-we-do.card-contact.hover-up
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            h6.color-brand-1.mb-10= title
+            p.font-md.color-grey-500.mb-5= description
+
+mixin cardProduct(img='assets/imgs/page/shop/sp1.png', title='Sony DSCH300/B Digital Camera (Black)', price='$22.51', desc='Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit', link='#')
+    .card-product
+        .card-image
+            a(href= link)
+                img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h6.color-grey-900.mb-10= title
+            .d-flex.align-items-center.mb-20
+                .rating
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star-gray.svg", alt="Flowedge")
+                    |
+                    span.color-grey-200.font-xs.ml-10.d-inline-block.align-middle (84 rates)
+                .price
+                    span.text-price= price
+            p.color-grey-300.font-xs= desc
+
+mixin cardProductList(img='assets/imgs/page/shop/sp1.png', title='Sony DSCH300/B Digital Camera (Black)', price='$22.51', desc='Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit', link='#')
+    .card-product.card-product-list
+        .card-image
+            a(href= link)
+                img(src= img, alt="Flowedge")
+        .card-info
+            a(href= link)
+                h6.color-grey-900.mb-10= title
+            .d-flex.align-items-center.mb-20
+                .rating
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    |
+                    img(src="assets/imgs/template/icons/star-gray.svg", alt="Flowedge")
+                    |
+                    span.color-grey-200.font-xs.ml-10.d-inline-block.align-middle (84 rates)
+                .price
+                    span.text-price= price
+            p.color-grey-300.font-xs= desc
+            ul.list-dots.mt-15
+                li.font-xs Fe 28-70Mm F/3.5-5.6 Oss Lens
+                li.font-xs Np-Fw50 Lithium-Ion Rechargeable Battery
+                li.font-xs Multi-Interface Shoe Cover
+
+mixin cardMember(img='assets/imgs/page/team/member1.png', title='Darrell Steward', dept='Product Designer', desc='Joined since 2012, when we were just established. He is a great companion.')
+    .card-member
+        .card-top
+            .card-image
+                img(src= img, alt="Flowedge")
+            .card-info
+                span.font-lg-bold.color-brand-1= title
+                p.font-xs.color-grey-200= dept
+                .list-socials
+                    a.icon-socials.icon-facebook(href='#')
+                    a.icon-socials.icon-instagram(href='#')
+                    a.icon-socials.icon-twitter(href='#')
+        .card-bottom
+            p.font-xs.color-grey-500= desc
+
+mixin cardGuide(img='assets/imgs/page/help/img1.png', title='Knowledge Base', desc='Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus', link='#')
+    .card-guide
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            h5.color-brand-1.mb-15= title
+            p.font-xs.color-grey-500= desc
+            .mt-10
+                a.btn.btn-default.font-sm-bold.pl-0(href= link) Get Started
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardReview(img='assets/imgs/page/homepage7/author4.png', author='Guy Hawkins', department='Bank of America', desc='Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus')
+    .card-review
+        .card-info
+            .rating-review
+                img(src="assets/imgs/page/homepage7/star.png", alt="Flowedge")
+                img(src="assets/imgs/page/homepage7/star.png", alt="Flowedge")
+                img(src="assets/imgs/page/homepage7/star.png", alt="Flowedge")
+                img(src="assets/imgs/page/homepage7/star.png", alt="Flowedge")
+                img(src="assets/imgs/page/homepage7/star.png", alt="Flowedge")
+            h5.color-grey-800.mb-20= desc
+            .box-author
+                a(href="#")
+                    img(src= img, alt="Flowedge")
+                .author-info
+                    a(href="#")
+                        span.font-md-bold.color-brand-1.author-name= author
+                    span.font-xs.color-grey-500.department= department
+
+mixin cardMarketing(img='assets/imgs/page/homepage1/cross.png', title='Smart Installation Tools', description='Your site is not complete with only landings. Get essential inner pages using our ready demos.', link='job-detail.html')
+    .card-offer.card-we-do.card-marketing.hover-up
+        .card-image
+            span.cover-image
+                img(src= img, alt="Flowedge")
+        .card-info
+            h4.color-brand-1.mb-10
+                 a.color-brand-1(href= link)= title
+            p.font-md.color-grey-500.mb-5= description
+            .box-button-offer
+                a.btn.btn-default.font-sm-bold.pl-0.color-brand-1 Learn More
+                    svg.w-6.h-6.icon-16.ml-5(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                        path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M14 5l7 7m0 0l-7 7m7-7H3')
+
+mixin cardHuman(img='assets/imgs/page/homepage6/human1.png', title='Cross Platform', description='Discover powerful features to boost your productivit. You are always welcome to visit our little den.', link='#')
+    .card-human
+        if !block
+            .card-image.mb-15
+                img(src= img, alt="Flowedge")
+        .card-info.mb-30
+            h4.color-brand-1.mt-15.mb-10= title
+            p.font-sm.color-grey-500= description
+        if block
+            .card-image.mb-15
+                block
+
+mixin cardMember_2(img='assets/imgs/page/about/team1.png', name='Devon Lane', position='CEO')
+    .card-member-2.mb-30
+        .card-image
+            img(src= img, alt="Flowedge")
+        if !block
+            .card-info
+                a.font-lg-bold.color-brand-1(href="#")= name
+                .d-flex.align-items-center
+                    p.font-xs.color-grey-200= position
+                    .list-socials.mt-0
+                        a.icon-socials.icon-facebook(href='#')
+                        a.icon-socials.icon-twitter(href='#')
+                        a.icon-socials.icon-instagram(href='#')
+        if block
+            block
+
+mixin cardBecomeLeft(img='assets/imgs/page/homepage8/icon1.png', title='Total control', desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada felis eget finibus placerat. Aliquam sit amet vestibulum felis, sit amet porta neque')
+    .card-become
+        .card-title.text-end
+            h6.color-brand-1.mb-15
+                span= title
+                img.ml-15(src= img, alt="Flowedge")
+        .card-desc
+            p.text-end.color-grey-500= desc
+
+mixin cardBecomeRight(img='assets/imgs/page/homepage8/icon1.png', title='Total control', desc='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus malesuada felis eget finibus placerat. Aliquam sit amet vestibulum felis, sit amet porta neque')
+    .card-become
+        .card-title.text-start
+            h6.color-brand-1.mb-15
+                img.mr-15(src= img, alt="Flowedge")
+                span= title
+        .card-desc
+            p.text-start.color-grey-500= desc
+
+mixin cardComment(img='assets/imgs/page/homepage8/author1.png', title='Bessie Cooper', comment='Duis justo nulla, pulvinar at dolor dapibus, finibus cursus massa')
+    .card-comment
+        .card-image
+            img(src= img, alt="Flowedge")
+        .card-info
+            .card-title
+                span.font-md-bold.color-brand-1.title-comment= title
+                .rating
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+                    img(src="assets/imgs/template/icons/star.svg", alt="Flowedge")
+            p.font-xs.color-grey-500= comment
+
+mixin gridTab(img='assets/imgs/page/homepage10/img-tab.png', label='Business', title='Integrate with over 1,000 project management apps', desc='Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla. Interactively transform magnetic growth strategies whereas prospective "outside the box" thinking.')
+    .box-tab-32
+        .row.align-items-center
+            .col-xl-6.col-lg-5
+                img.bd-rd16(src= img, alt="Flowedge")
+            .col-xl-6.col-lg-7
+                .box-business-tab
+                    span.btn.btn-tag= label
+                    h3.color-brand-1.mt-10.mb-15= title
+                    p.font-md.color-grey-400= desc
+                    .mt-20
+                        ul.list-ticks
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | Task tracking
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | Create task dependencies
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | Task visualization
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | hare files, discuss
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | Meet deadlines faster
+                            li
+                                svg.w-6.h-6.icon-16(fill='none', stroke='currentColor', viewbox='0 0 24 24', xmlns='http://www.w3.org/2000/svg')
+                                    path(stroke-linecap='round', stroke-linejoin='round', stroke-width='2', d='M5 13l4 4L19 7')
+                                | Track time spent on each project

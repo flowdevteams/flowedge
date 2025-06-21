@@ -1,0 +1,20 @@
+
+.row.align-items-start.align-items-md-center 
+    .col-lg-3.col-md-2.col-sm-3.col-3.pr-0
+        a.filter-link.btn-grid(href="shop-grid.html") 
+        a.filter-link.btn-list(href="shop-list.html") 
+    .col-lg-9.col-md-10.col-sm-9.col-9.text-end
+        .d-inline-block
+            .d-flex.align-items-center.box-filter-text
+                span.text-showing.font-md.color-grey-500.d-inline-block.mr-40 Showing 1–16 of 17 results 
+                .box-sortby.d-flex.align-items-center
+                    span.font-md.color-grey-200.d-inline-block.mr-10 Sort by:
+                    .dropdown.dropdown-sort.border-1-right
+                        button#dropdownSort.btn.dropdown-toggle.font-sm.color-gray-900.font-medium(type='button', data-bs-toggle='dropdown', aria-expanded='false') Latest products
+                        ul.dropdown-menu.dropdown-menu-light(aria-labelledby='dropdownSort', style='margin: 0px;')
+                            li
+                                a.dropdown-item.active(href='#') Latest products
+                            li
+                                a.dropdown-item(href='#') Oldest products
+                            li
+                                a.dropdown-item(href='#') Comments products 

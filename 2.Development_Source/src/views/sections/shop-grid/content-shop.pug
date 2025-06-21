@@ -1,0 +1,183 @@
+section.section.mt-50
+    .container 
+        include ../../elements/filter.pug
+
+        .row.mt-50 
+            -
+                const products = [
+                    {
+                        img: 'assets/imgs/page/shop/sp1.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp2.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp3.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp4.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp5.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp6.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp7.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp8.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    }
+                ]
+            each product in products
+                .col-lg-3.col-md-6 
+                    +cardProduct(product.img, product.title, product.price, product.description, product.link)
+                
+        include ../../elements/sale1.pug
+        .row
+            -
+                const products2 = [
+                    {
+                        img: 'assets/imgs/page/shop/sp9.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp10.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp11.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp12.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp13.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp14.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp15.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp16.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp17.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp18.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp19.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/shop/sp20.png',
+                        title: 'Sony DSCH300/B Digital Camera (Black)',
+                        description: 'Full-frame Mirrorless Interchangeable Lens Camera with 28-70mm Zoom Lens Kit',
+                        price: '$22.51',
+                        link: 'product-detail.html'
+
+                    }
+                ]
+            each product in products2
+                .col-lg-3.col-md-6 
+                    +cardProduct(product.img, product.title, product.price, product.description, product.link)
+
+        .text-center.mt-30
+            include ../../elements/pagination.pug

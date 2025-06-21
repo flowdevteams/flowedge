@@ -1,0 +1,96 @@
+section.section.mt-90
+    .container
+        h6.color-brand-1.mb-20.wow.animate__animated.animate__fadeIn(data-wow-delay='.0s') Board members
+        h2.color-brand-1.mb-50.wow.animate__animated.animate__fadeIn(data-wow-delay='.2s') Together we are strong
+
+        .row
+            -
+                const members = [
+                    {
+                        img: 'assets/imgs/page/team/member1.png',
+                        title: 'Darrell Steward',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member2.png',
+                        title: 'Guy Hawkins',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member3.png',
+                        title: 'Darlene Robertson',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member4.png',
+                        title: 'Ronald Richards',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member5.png',
+                        title: 'Kathryn Murphy',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member6.png',
+                        title: 'Cameron Williamson',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member7.png',
+                        title: 'Floyd Miles',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member8.png',
+                        title: 'Devon Lane',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member9.png',
+                        title: 'Albert Flores',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member10.png',
+                        title: 'Jenny Wilson',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member11.png',
+                        title: 'Arlene McCoy',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/member12.png',
+                        title: 'Theresa Webb',
+                        description: 'Joined since 2012, when we were just established. He is a great companion.',
+                        dept: 'Product Designer'
+
+                    }
+                ]
+            each member in members
+                .col-xl-3.col-lg-4.col-md-6.col-sm-6.wow.animate__animated.animate__fadeIn
+                    +cardMember(member.img, member.title, member.dept, member.description)

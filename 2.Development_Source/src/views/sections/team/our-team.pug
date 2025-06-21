@@ -1,0 +1,44 @@
+section.section.mt-90
+    .container
+        .row.align-items-start
+            .col-lg-6
+                h6.color-brand-1.mb-20.wow.animate__animated.animate__fadeInUp(data-wow-delay='.s') Our leadership team
+                h2.color-brand-1.mb-50.wow.animate__animated.animate__fadeInUp(data-wow-delay='.2s') Meet the amazing team behind Flowedge
+
+        .row.align-items-start
+            -
+                const teams = [
+                    {
+                        img: 'assets/imgs/page/about/team1.png',
+                        title: 'Devon Lane',
+                        description: 'Sharing content online allows you to craft an online persona that reflects your personal values and professional skills. Even if you only use social media occasionally',
+                        dept: 'CEO'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/about/team2.png',
+                        title: 'Jennie Tho',
+                        description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus.',
+                        dept: 'Finance Manager'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/about/team3.png',
+                        title: 'Symon Lesin',
+                        description: 'In a professional context it often happens that private or corporate clientsorder a publication to publish news. Excepteur sint occaecat cupidatat non proident,',
+                        dept: 'Technology Manager'
+
+                    },
+                    {
+                        img: 'assets/imgs/page/team/team1.png',
+                        title: 'Virginia Aguilar',
+                        description: 'In a professional context it often happens that private or corporate clientsorder a publication to publish news. Excepteur sint occaecat cupidatat non proident,',
+                        dept: 'Director of People'
+
+                    }
+                ]
+            each team in teams
+                .col-lg-3.col-md-6.col-sm-6.wow.animate__animated.animate__fadeIn(data-wow-delay='.s')
+                    +cardTeam(team.img, team.title, team.dept, team.description)
+
+    .border-bottom.mt-30
